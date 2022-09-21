@@ -1,7 +1,7 @@
 streamlit
 pandas
 requests
-matplotlib.pyplot
+matplotlib
 io
 wordcloud
 string
