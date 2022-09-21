@@ -4,5 +4,4 @@ requests
 matplotlib
 wordcloud
 nltk
-collections
 altair
