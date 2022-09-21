@@ -4,7 +4,7 @@ requests
 matplotlib
 
 wordcloud
-string
+
 nltk
 nltk.corpus
 nltk.stem
