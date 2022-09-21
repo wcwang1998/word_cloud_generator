@@ -2,12 +2,8 @@ streamlit
 pandas
 requests
 matplotlib
-
 wordcloud
-
 nltk
-nltk.corpus
-nltk.stem
 warnings
 collections
 altair
