@@ -74,20 +74,22 @@ if uploaded_file is not None:
 # ---------------------------------- Step 2: Add filter --------------------------------- #
 
 st.header('Step 2: Add Filter')
+ft_check = st.checkbox(label='Add Filter', value=True)
 
 try:
-    options = df.columns
-    filter_col = st.selectbox(
-        label="Select one column you want to filter",
-        options=options)
+    if ft_check:
+        options = df.columns
+        filter_col = st.selectbox(
+            label="Select one column you want to filter",
+            options=options)
 
-    options = df[filter_col].unique()
-    filter = st.multiselect(
-        label="Select values you want to filter",
-        options=options)
+        options = df[filter_col].unique()
+        filter = st.multiselect(
+            label="Select values you want to filter",
+            options=options)
 
-    df = df[df[filter_col].isin(filter)]
-    st.caption(f'Total: {len(df)}')
+        df = df[df[filter_col].isin(filter)]
+        st.caption(f'Total: {len(df)}')
 except:
     pass
 
