@@ -57,7 +57,7 @@ st.sidebar.markdown("""- Created by
 st.header('Step 1: Upload File')
 
 uploaded_file = st.file_uploader(
-    label = "Upload excel or csv file",
+    label = "Upload excel or csv file (The file must contain only one sheet.)",
     type = ["xlsx","csv"],
     accept_multiple_files = False,
     help = '''File must be csv or excel format.''')
