@@ -21,9 +21,6 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
-# cd C:\Users\424714\Desktop\WordCloud
-# py -m streamlit run app.py
-
 # ---------------------------------- basic parameters --------------------------------- #
 
 st.set_page_config(
